@@ -7,7 +7,5 @@ spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
-      targetPort: 3306
-      nodePort: {{ .Values.service.nodePort }}
   selector:
     app: mysqldb
